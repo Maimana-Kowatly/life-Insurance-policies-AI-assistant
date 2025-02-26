@@ -3,16 +3,20 @@ AI query assistant for life insurance policies using Semantic Spotter langchain
 
 Semantic Spotter Project Submission
 
-**1. Background**
+**1. Background:**
+
 This project demonstrates how to build a RAG (Retrieval-Augmented Generation) system in the insurance domain using LangChain.
 
-**2. Problem Statement**
+**2. Problem Statement:**
+
 The goal of the project is to develop a robust generative search system that can accurately answer questions from a collection of policy documents.
 
-**3. Document**
+**3. Document:**
+
 The policy documents used for this project are stored in a 'Policies Documents' directory.
 
-**4. Approach**
+**4. Approach:**
+
 LangChain is a framework that simplifies the development of LLM-based applications by providing a suite of tools, components, and interfaces. It allows seamless integration with various data sources, making it a versatile solution for creating advanced AI-driven applications.
 LangChain supports multiple LLM providers, including OpenAI, Cohere, and Hugging Face, and is available in Python and JavaScript/TypeScript. It follows a modular and compositional design that enables developers to build complex applications efficiently.
 LangChain Framework Components
@@ -23,7 +27,8 @@ LangChain Framework Components
 •	Agents: Allowing chains to decide which tools to use based on directives.
 •	Callbacks: Logging and streaming intermediate steps.
 
-**5. System Layers**
+**5. System Layers:**
+
 Reading & Processing PDF Files
 We use LangChain’s PyPDFDirectoryLoader to read and process PDF files from a given directory.
 Document Chunking
@@ -39,7 +44,9 @@ To improve the relevance of retrieved results, we employ HuggingFaceCrossEncoder
 Chains
 LangChain’s Chains allow the integration of multiple components. We use a RAG chain with the rlm/rag-prompt template from LangChain Hub to structure and refine the final output.
 This project leverages LangChain’s capabilities to build a powerful, intelligent, and context-aware search system for insurance policy documents.
+
 **6.System Architecture**:
+
   ![image](https://github.com/user-attachments/assets/949d1879-de59-44cc-b289-0cee4c14380e)
   ![langchain-flow](https://github.com/user-attachments/assets/f506dfd7-25d1-49c5-8a9b-341cd7dcb432)
 ![image](https://github.com/user-attachments/assets/bae8f94a-17a1-4296-bbcf-b9c1fc93665e)
@@ -58,7 +65,8 @@ rag_chain.invoke(query)
 answer:
 The life insurance coverage for kidney failure, specifically end-stage renal failure, includes regular renal dialysis or kidney transplantation deemed medically necessary by a nephrologist. Acute reversible kidney failure that only requires temporary renal dialysis is not covered. The coverage is contingent on the condition being chronic, irreversible, and necessitating ongoing treatment.
 
-**8. Prerequisites**
+**8. Prerequisites:**
+
 •	Python 3.7+
 •	langchain 0.3.13
 
